@@ -1,12 +1,19 @@
-import logo from './logo.svg';
+
+import { createContext } from 'react';
 import './App.css';
-import User from './components/User/User';
+
+import Calculator from './calculator/Calculator';
+
+
+
+const LoginContext = createContext();
 
 function App() {
   return (
-    <div className="App">
-     <User/>
-    </div>
+ <div>
+  <Calculator/>
+ </div>
+  
   );
 }
 
